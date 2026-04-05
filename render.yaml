@@ -25,9 +25,15 @@ services:
   - type: redis
     name: ai-resume-intelligence-redis
     plan: free
+    ipAllowList:
+      - source: 0.0.0.0/0
+        description: public access (can be restricted later)
 
 databases:
   - name: ai-resume-intelligence-db
     databaseName: talent_intel
     user: talent_intel_user
     plan: free
+    ipAllowList:
+      - source: 0.0.0.0/0
+        description: public access (can be restricted later)
