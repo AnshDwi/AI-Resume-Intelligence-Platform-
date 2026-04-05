@@ -22,6 +22,8 @@ services:
         sync: false
       - key: OPENAI_MODEL
         value: gpt-4o-mini
+      - key: CORS_ORIGINS
+        value: https://ai-resume-intelligence-platform.vercel.app
   - type: redis
     name: ai-resume-intelligence-redis
     plan: free

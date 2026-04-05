@@ -46,7 +46,10 @@ Use these exact settings to connect frontend and backend in production:
 2. Add:
    - `VITE_API_BASE_URL=https://ai-resume-intelligence-backend-j03w.onrender.com/api/v1`
 3. Redeploy Vercel (Production).
-4. Test:
+4. In Render backend service, set:
+   - `CORS_ORIGINS=https://ai-resume-intelligence-platform.vercel.app`
+5. Redeploy Render backend.
+6. Test:
    - Register/Login works
    - Dashboard loads API data
    - Resume and matching actions return results
