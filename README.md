@@ -12,25 +12,25 @@ Production-grade SaaS starter for job seekers and recruiters with AI-powered res
 ## Screenshots
 
 ### Resume Improvement Engine
-![Resume Improvement Engine](screenshots/dashboard.png)
+![Resume Improvement Engine](screenshots/dashboard-v2.png)
 
 ### ATS Insights
-![ATS Insights](screenshots/ats-insights.png)
+![ATS Insights](screenshots/ats-insights-v2.png)
 
 ### Job Matching
-![Job Matching](screenshots/matching.png)
+![Job Matching](screenshots/matching-v2.png)
 
 ### AI Feedback
-![AI Feedback](screenshots/ai-feedback.png)
+![AI Feedback](screenshots/ai-feedback-v2.png)
 
 ### Preparation Hub
-![Preparation Hub](screenshots/prep.png)
+![Preparation Hub](screenshots/prep-v2.png)
 
 ### Interview Module
-![Interview Module](screenshots/interviews.png)
+![Interview Module](screenshots/interviews-v2.png)
 
 ### Analytics
-![Analytics](screenshots/analytics.png)
+![Analytics](screenshots/analytics-v2.png)
 
 ## Core Features Implemented
 
