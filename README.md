@@ -9,6 +9,29 @@ Production-grade SaaS starter for job seekers and recruiters with AI-powered res
 - AI/NLP: OpenAI API integration (optional), spaCy-based parsing/skill extraction
 - Infra: Docker + Docker Compose
 
+## Screenshots
+
+### Resume Improvement Engine
+![Resume Improvement Engine](screenshots/dashboard.png)
+
+### ATS Insights
+![ATS Insights](screenshots/ats-insights.png)
+
+### Job Matching
+![Job Matching](screenshots/matching.png)
+
+### AI Feedback
+![AI Feedback](screenshots/ai-feedback.png)
+
+### Preparation Hub
+![Preparation Hub](screenshots/prep.png)
+
+### Interview Module
+![Interview Module](screenshots/interviews.png)
+
+### Analytics
+![Analytics](screenshots/analytics.png)
+
 ## Core Features Implemented
 
 - Resume upload + PDF parsing + structured extraction

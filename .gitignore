@@ -1,21 +1,31 @@
+# Node / Frontend
 node_modules/
 dist/
+.vite/
 
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Env files
 .env
 .env.local
 backend/.env
-backend/.venv/
-backend/venv/
+
+# Logs
+*.log
+*.err
+backend_*.log
+frontend_*.log
+
+# Databases
 *.db
 
-*.log
-backend_live*.log
-backend_run*.log
-backend_smoke*.log
-backend_test*.log
-frontend_live*.log
-frontend_run*.log
-frontend_preview*.log
-
+# OS files
 .DS_Store
 Thumbs.db
