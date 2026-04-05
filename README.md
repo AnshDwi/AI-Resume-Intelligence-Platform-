@@ -35,6 +35,7 @@ Production-grade SaaS starter for job seekers and recruiters with AI-powered res
 ## Live Deployments
 
 - Vercel (Frontend + serverless services): https://ai-resume-intelligence-platform.vercel.app
+- Render Backend API: https://ai-resume-intelligence-backend-j03w.onrender.com
 - Render Blueprint (one-click deploy): https://render.com/deploy?repo=https://github.com/AnshDwi/AI-Resume-Intelligence-Platform-
 
 ## Core Features Implemented
