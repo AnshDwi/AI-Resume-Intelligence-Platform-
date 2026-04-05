@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply text-slate-100 antialiased;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    background:
+      radial-gradient(circle at 7% 10%, rgba(249, 168, 212, 0.2), transparent 46%),
+      radial-gradient(circle at 95% 8%, rgba(196, 181, 253, 0.25), transparent 42%),
+      radial-gradient(circle at 28% 100%, rgba(125, 211, 252, 0.2), transparent 45%),
+      linear-gradient(130deg, #090e21 0%, #111731 40%, #141d3c 70%, #0e1834 100%);
+  }
+
+  body.light {
+    @apply text-slate-100;
+    background:
+      radial-gradient(circle at 7% 10%, rgba(249, 168, 212, 0.2), transparent 46%),
+      radial-gradient(circle at 95% 8%, rgba(196, 181, 253, 0.25), transparent 42%),
+      radial-gradient(circle at 28% 100%, rgba(125, 211, 252, 0.2), transparent 45%),
+      linear-gradient(130deg, #090e21 0%, #111731 40%, #141d3c 70%, #0e1834 100%);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Poppins", "Inter", sans-serif;
+    @apply tracking-tight text-slate-100;
+  }
+
+  .light h1,
+  .light h2,
+  .light h3,
+  .light h4 {
+    @apply text-slate-100;
+  }
+}
+
+@layer utilities {
+  .card-surface {
+    @apply rounded-2xl border border-white/20 bg-slate-900/55 shadow-soft backdrop-blur-2xl transition duration-300 hover:-translate-y-0.5;
+    box-shadow:
+      0 18px 40px rgba(86, 53, 174, 0.26),
+      0 10px 24px rgba(203, 85, 167, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.09);
+    background-image: linear-gradient(145deg, rgba(249, 168, 212, 0.08), rgba(196, 181, 253, 0.06) 46%, rgba(125, 211, 252, 0.07));
+  }
+
+  .light .card-surface {
+    @apply border-white/20 bg-slate-900/55;
+    box-shadow:
+      0 18px 40px rgba(86, 53, 174, 0.26),
+      0 10px 24px rgba(203, 85, 167, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.09);
+    background-image: linear-gradient(145deg, rgba(249, 168, 212, 0.08), rgba(196, 181, 253, 0.06) 46%, rgba(125, 211, 252, 0.07));
+  }
+
+  .soft-divider {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-slate-500/60 to-transparent;
+  }
+
+  .premium-tab {
+    @apply rounded-xl border border-transparent px-4 py-2.5 text-sm font-semibold text-slate-300 transition;
+  }
+
+  .premium-tab:hover {
+    @apply border-pink-200/60 bg-gradient-to-r from-pink-300/25 via-violet-300/20 to-sky-300/20 text-white;
+  }
+
+  .premium-tab-active {
+    @apply border-pink-200/65 bg-gradient-to-r from-pink-300/30 via-violet-300/30 to-sky-300/30 text-white shadow-[0_0_0_1px_rgba(255,255,255,0.22)_inset];
+  }
+
+  .btn-premium {
+    @apply rounded-full px-5 py-2.5 text-sm font-semibold transition;
+  }
+
+  .btn-premium:hover {
+    @apply -translate-y-0.5 shadow-lg;
+  }
+
+  .btn-primary-glow {
+    @apply btn-premium bg-gradient-to-r from-pink-300 via-violet-300 to-sky-300 text-slate-950;
+    box-shadow: 0 14px 32px rgba(244, 114, 182, 0.36), 0 8px 20px rgba(167, 139, 250, 0.28);
+  }
+
+  .btn-primary-glow:hover {
+    box-shadow: 0 18px 34px rgba(168, 85, 247, 0.34);
+  }
+
+  .btn-secondary-glass {
+    @apply btn-premium border border-white/30 bg-white/10 text-slate-100 backdrop-blur-xl;
+  }
+
+  .skeleton-shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+    animation: shimmer 1.5s infinite;
+  }
+
+  .grain-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image:
+      radial-gradient(circle, rgba(255, 255, 255, 0.5) 0.4px, transparent 0.6px);
+    background-size: 3px 3px;
+    mix-blend-mode: soft-light;
+    z-index: 0;
+  }
+
+  .glow-blob {
+    position: fixed;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 9999px;
+    filter: blur(72px);
+    opacity: 0.22;
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(220%);
+  }
+}
