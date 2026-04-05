@@ -38,6 +38,19 @@ Production-grade SaaS starter for job seekers and recruiters with AI-powered res
 - Render Backend API: https://ai-resume-intelligence-backend-j03w.onrender.com
 - Render Blueprint (one-click deploy): https://render.com/deploy?repo=https://github.com/AnshDwi/AI-Resume-Intelligence-Platform-
 
+## Production Setup (Final)
+
+Use these exact settings to connect frontend and backend in production:
+
+1. Open Vercel project settings -> Environment Variables.
+2. Add:
+   - `VITE_API_BASE_URL=https://ai-resume-intelligence-backend-j03w.onrender.com/api/v1`
+3. Redeploy Vercel (Production).
+4. Test:
+   - Register/Login works
+   - Dashboard loads API data
+   - Resume and matching actions return results
+
 ## Core Features Implemented
 
 - Resume upload + PDF parsing + structured extraction
